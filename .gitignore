@@ -1,33 +1,37 @@
-# Python
-*.pyc
-__pycache__/
+# Python Bytecode
+*.py[cod]
 *.pyo
 *.pyd
-.Python
+*$py.class
+__pycache__/
+
+# Virtual Environment
 env/
 venv/
+.venv/
 ENV/
 ENV.bak/
 venv.bak/
+.Python
 
-# Django stuff:
+# Django specific files
 *.log
 *.pot
-*.pyc
-__pycache__/
 db.sqlite3
 db.sqlite3-journal
-
-# Media and static files
-/media
-/staticfiles
-
-# Django specific:
 local_settings.py
 .env
 
-# Ignore VS Code specific files
+# Static and media files (collected or generated)
+static/
+staticfiles/
+media/
+
+# VS Code specific files
 .vscode/
 
-# Mac specific files
+# macOS specific files
 .DS_Store
+
+# Docker specific files
+*.log
